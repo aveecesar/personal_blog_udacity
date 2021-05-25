@@ -1,0 +1,53 @@
+@import ".typogarphy.css";
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.menu-links:hover {
+    color: rgb(121, 121, 121);
+}
+
+.logo {
+    height: 55px;
+    width: auto;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 70%;
+    height: 100px;
+}
+
+.navbar-container a {
+    margin-right: 2rem;
+    font-size: 1rem;
+}
+
+@media screen and (min-width:320px) and (max-width:600px) {
+    .logo {
+        margin: 0 0 0 0.7rem;
+    }
+    .navbar-container {
+        max-width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (min-width:600px) and (max-width:1024px) {
+    .logo {
+        margin-left: 0.7rem;
+    }
+}
